@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.abahsoft.indomas.activity.ActivityBahanBakarAdd">
+
+    <include
+        layout="@layout/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+		
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context="com.abahsoft.indomas.fragment.FragmentHome" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="20dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/custom_container_button_layer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="0dp"
+                            android:paddingTop="0dp"
+                            android:duplicateParentState="true"
+                            android:clickable="false"
+                            android:gravity="center_vertical" >
+
+
+                            <ImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="5dp"
+                                android:tint="@color/blue3"
+                                android:layout_gravity="top"
+                                android:duplicateParentState="true" android:clickable="false"
+                                android:src="@drawable/icon_calendar" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:paddingBottom="0dp"
+                                android:paddingTop="0dp"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_gravity="top"
+                                    android:textColor="@color/black"
+                                    android:singleLine="false"
+                                    android:textSize="12dp"
+                                    android:duplicateParentState="true" android:clickable="false"
+                                    android:text="Rabu, 4 Juli '18 06:00"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_gravity="top"
+                                    android:textColor="@color/black"
+                                    android:singleLine="false"
+                                    android:textSize="12dp"
+                                    android:duplicateParentState="true" android:clickable="false"
+                                    android:text="Rabu, 4 Juli '18 18:00"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_gravity="top"
+                                android:textColor="@color/grey"
+                                android:singleLine="false"
+                                android:textSize="12dp"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:gravity="top|right"
+                                android:text="12 hari yang lalu"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/custom_container_button_layer">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="0dp"
+                            android:paddingTop="0dp"
+                            android:duplicateParentState="true"
+                            android:clickable="false"  >
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="0dp"
+                            android:duplicateParentState="true"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical" >
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:paddingBottom="0dp"
+                                android:paddingTop="0dp"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="0dp"
+                                    android:paddingTop="0dp"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical" >
+
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="top"
+                                        android:tint="@color/succes_focus"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_circle" />
+
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_marginLeft="5dp"
+                                        android:tint="@color/grey2"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_ellipsis_v" />
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_marginLeft="5dp"
+                                        android:tint="@color/grey2"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_ellipsis_v" />
+
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_marginLeft="5dp"
+                                        android:tint="@color/grey2"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_ellipsis_v" />
+
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="top"
+                                        android:tint="@color/danger_focus"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_circle" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="0dp"
+                                    android:paddingTop="0dp"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:layout_marginStart="5dp"
+                                        android:singleLine="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:text="Gunung Batu, Cirebon "
+                                        android:layout_alignParentTop="true"/>
+
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_gravity="bottom"
+                                        android:singleLine="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:text="Pool Bandung "
+                                        android:layout_alignParentBottom="true"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:paddingBottom="0dp"
+                                android:paddingTop="0dp"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:orientation="vertical"
+                                android:gravity="right|center" >
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:text="200 KM" />
+
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:tint="@color/blue3"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_map" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="5dp"
+                                    android:tint="@color/grey2"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:src="@drawable/icon_ellipsis_v" />
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="5dp"
+                                    android:tint="@color/grey2"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:src="@drawable/icon_ellipsis_v" />
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="5dp"
+                                    android:tint="@color/grey2"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:src="@drawable/icon_ellipsis_v" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:duplicateParentState="true"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:text="12 Jam" />
+
+                                    <ImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:tint="@color/blue4"
+                                        android:duplicateParentState="true"
+                                        android:clickable="false"
+                                        android:src="@drawable/icon_clock_o" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:gravity="center_vertical">
+
+                            <com.google.android.gms.maps.MapView
+                                android:id="@+id/mapView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="20dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/custom_container_button_layer">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="top"
+                                android:tint="@color/blue3"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:src="@drawable/icon_th_large" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="left"
+                                android:text="Detail Pekerjaan"
+                                android:textColor="@color/blue3"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/custom_container_button_layer">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="ID Pekerjaan"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="JLN/20180704/12/13/99"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Nama Supir"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Asep Gunawan"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Nama Kenek"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Suripto"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Status"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingBottom="0dp"
+                                android:paddingTop="0dp"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:gravity="left" >
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:tint="@color/warning_focus"
+                                    android:duplicateParentState="true" android:clickable="false"
+                                    android:src="@drawable/icon_asterisk" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_gravity="top"
+                                    android:singleLine="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:duplicateParentState="true" android:clickable="false"
+                                    android:text="Pekerjaan Baru"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="20dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/custom_container_button_layer">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="top"
+                                android:tint="@color/blue3"
+                                android:duplicateParentState="true"
+                                android:clickable="false"
+                                android:src="@drawable/icon_star" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="left"
+                                android:text="Penilaian"
+                                android:textColor="@color/blue3"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/custom_container_button_layer">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Kecepatan"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="80"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Ketepatan"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="80"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Rating"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="top" >
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="3dp"
+                                    android:tint="@color/yellow2"
+                                    android:src="@drawable/icon_star" />
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="3dp"
+                                    android:tint="@color/yellow2"
+                                    android:src="@drawable/icon_star" />
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="3dp"
+                                    android:tint="@color/yellow2"
+                                    android:src="@drawable/icon_star_half_empty" />
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="3dp"
+                                    android:tint="@color/yellow2"
+                                    android:src="@drawable/icon_star_o" />
+
+                                <ImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="3dp"
+                                    android:tint="@color/yellow2"
+                                    android:src="@drawable/icon_star_o" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        fancy:fb_borderColor="@color/white"
+                        fancy:fb_borderWidth="1dp"
+                        fancy:fb_defaultColor="@color/succes_default"
+                        fancy:fb_focusColor="@color/succes_focus"
+                        fancy:fb_fontIconResource="&#xf0a9;"
+                        fancy:fb_iconPosition="left"
+                        fancy:fb_radius="5dp"
+                        fancy:fb_text="Mulai Pekerjaan"
+                        fancy:fb_textColor="@color/white" />
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="10dp"
+                        fancy:fb_borderColor="@color/white"
+                        fancy:fb_borderWidth="1dp"
+                        fancy:fb_defaultColor="@color/primary_default"
+                        fancy:fb_focusColor="@color/primary_focus"
+                        fancy:fb_fontIconResource="&#xf058;"
+                        fancy:fb_iconPosition="left"
+                        fancy:fb_radius="5dp"
+                        fancy:fb_text="Pekerjaan Selesai"
+                        fancy:fb_textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:paddingBottom="20dp"-->
+                    <!--app:cardElevation="3dp">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:background="@drawable/custom_container_button_layer">-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

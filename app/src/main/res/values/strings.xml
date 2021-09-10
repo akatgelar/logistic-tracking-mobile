@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Indomas Mobile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Profil</item>
+        <item>Peta</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+</resources>
